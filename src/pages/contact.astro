@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<script>
+	import * as Leaflet from "leaflet"
+	import "leaflet/dist/leaflet.css"
+
+	let map = Leaflet.map("map").setView([57.4358, -4.2616], 17)
+	Leaflet.tileLayer("http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}", {
+		maxZoom: 21,
+		subdomains: ["mt0", "mt1", "mt2", "mt3"],
+		attribution: "Data from <a href='https://maps.google.co.uk' target='_blank' rel='noopener noreferrer'>Google Maps</a>",
+	}).addTo(map)
+
+	Leaflet.marker([57.43589, -4.261064]).addTo(map)
+</script>
+
+<Layout title="Contact Us - Torbreck Orchard">
+	<h1>Contact Us</h1>
+	<p>
+		Torbreck Orchard,<br />
+		Torbreck,<br />
+		IV2 6DJ<br />
+		<br />
+		You can contact us by email at <a href="mailto:kellydes@aol.com">KellyDes@aol.com</a> or by mobile at <a href="tel:+447841192500">07841 192500</a>.
+	</p>
+	<div id="map"></div>
+</Layout>
+
+<style lang="sass">
+	#map
+		height: 600px
+		border-radius: 0.5rem
+</style>

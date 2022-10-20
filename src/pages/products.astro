@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="Products - Torbreck Orchard">
+	<h1>Products</h1>
+	<ul>
+		<li>Apple juice</li>
+		<li>Apples</li>
+		<li>Blackcurrants</li>
+		<li>Whitecurrants</li>
+		<li>Honey</li>
+		<li>Honeycomb</li>
+		<li>Plums</li>
+		<li>Raspberries</li>
+		<li>Bare root fruit trees (dormant season only)</li>
+		<li>Potted fruit trees</li>
+	</ul>
+</Layout>
+
+<style lang="sass">
+	ul
+		column-count: 3
+	@media screen and (max-width: 800px)
+		ul
+			column-count: 2
+	@media screen and (max-width: 500px)
+		ul
+			column-count: 1
+</style>

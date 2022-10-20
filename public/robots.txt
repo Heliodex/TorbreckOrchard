@@ -1,0 +1,3 @@
+# if you see this then you a nerd
+User-agent: *
+Allow: /
