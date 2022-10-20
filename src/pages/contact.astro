@@ -13,7 +13,16 @@ import Layout from "../layouts/Layout.astro"
 		attribution: "Data from <a href='https://maps.google.co.uk' target='_blank' rel='noopener noreferrer'>Google Maps</a>",
 	}).addTo(map)
 
-	Leaflet.marker([57.43589, -4.261064]).addTo(map)
+	Leaflet.marker([57.43589, -4.261064], {
+		icon: Leaflet.icon({
+			iconUrl: "/marker-icon.png",
+			iconSize: [25, 41],
+			iconAnchor: [12, 39],
+			shadowUrl: "/marker-shadow.png",
+			shadowSize: [41, 41],
+			shadowAnchor: [13, 39],
+		}),
+	}).addTo(map)
 </script>
 
 <Layout title="Contact Us - Torbreck Orchard">
