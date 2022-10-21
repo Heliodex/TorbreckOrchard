@@ -23,7 +23,7 @@
 			bg = true
 		}}
 	>
-		<img src="/gallery/{item.Filename}.webp" alt={item.Name} />
+		<img src="http://cdn.torbreckorchard.co.uk/gallery/{item.Filename}.webp" alt={item.Name} />
 	</button>
 {/each}
 
@@ -39,7 +39,7 @@
 		}}
 	>
 		<h1>{currentItem.Name}</h1>
-		<img src="/galleryhq/{currentItem.Filename}.jpg" alt={currentItem.Name} />
+		<img src="http://cdn.torbreckorchard.co.uk/galleryhq/{currentItem.Filename}.jpg" alt={currentItem.Name} />
 		<h2>{currentItem.Description}</h2>
 	</div>
 {/if}
