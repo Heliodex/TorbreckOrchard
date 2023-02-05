@@ -1,7 +1,3 @@
----
-import Layout from "../layouts/Layout.astro"
----
-
 <script>
 	import * as Leaflet from "leaflet"
 	import "leaflet/dist/leaflet.css"
@@ -25,17 +21,7 @@ import Layout from "../layouts/Layout.astro"
 	}).addTo(map)
 </script>
 
-<Layout title="Contact Us - Torbreck Orchard">
-	<h1>Contact Us</h1>
-	<p>
-		Torbreck Orchard,<br />
-		Torbreck,<br />
-		IV2 6DJ<br />
-		<br />
-		You can contact us by email at <a href="mailto:kellydes@aol.com">KellyDes@aol.com</a> or by mobile at <a href="tel:+447841192500">07841 192500</a>.
-	</p>
-	<div id="map"></div>
-</Layout>
+<div id="map"></div>
 
 <style lang="sass">
 	#map

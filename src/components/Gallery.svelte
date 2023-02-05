@@ -15,11 +15,14 @@
 
 <svelte:window on:keydown={close} />
 
-{#each json as item}
+<br />
+<div id="all">
+	{#each json as item}
 	<button class="galleryimg" on:click={open(item)} on:keypress={open(item)}>
 		<img src="https://cdn.torbreckorchard.co.uk/gallery/{item.Filename}.webp" alt={item.Name} />
 	</button>
-{/each}
+	{/each}
+</div>
 
 {#if bg}
 	<div transition:fade={{ duration: 200 }} id="bg" on:click={close} on:keypress={close}>
@@ -30,6 +33,18 @@
 {/if}
 
 <style lang="sass">
+	#all
+		max-width: 100%
+		display: grid
+		column-gap: 0.5rem
+		row-gap: 0.5rem
+		grid-template-columns: repeat(4, 1fr)
+
+		@media screen and (max-width: 800px)
+			grid-template-columns: repeat(3, 1fr)
+		@media screen and (max-width: 500px)
+			grid-template-columns: repeat(2, 1fr)
+
 	#bg
 		position: fixed
 		top: 0
@@ -38,15 +53,6 @@
 		height: 100vh
 		background: #000e
 		z-index: 999
-		h1, h2
-			text-align: center
-			margin-top: 6rem
-		h2
-			position: fixed
-			bottom: 0
-			left: 50%
-			transform: translateX(-50%)
-			height: 6rem
 
 		img
 			width: 100%
@@ -74,9 +80,18 @@
 			transition: 0.2s
 			transform: scale(1.2)
 
-	@media screen and (max-width: 800px)
-		h2
+	h1, h2
+		text-align: center
+		margin-top: 6rem
+	h2
+		position: fixed
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		height: 6rem
+		@media screen and (max-width: 800px)
 			width: 60%
+
 
 	@media screen and (max-width: 600px)
 		h1
