@@ -3,41 +3,26 @@
 	import json from "./gallery.json"
 	let bg = false
 	let currentItem
+
+	const open = item => () => {
+		currentItem = item
+		bg = true
+	}
+	const close = () => {
+		bg = false
+	}
 </script>
 
-<svelte:window
-	on:keydown={() => {
-		bg = false
-	}}
-/>
+<svelte:window on:keydown={close} />
 
 {#each json as item}
-	<button
-		class="galleryimg"
-		on:click={() => {
-			currentItem = item
-			bg = true
-		}}
-		on:keypress={() => {
-			currentItem = item
-			bg = true
-		}}
-	>
+	<button class="galleryimg" on:click={open(item)} on:keypress={open(item)}>
 		<img src="https://cdn.torbreckorchard.co.uk/gallery/{item.Filename}.webp" alt={item.Name} />
 	</button>
 {/each}
 
 {#if bg}
-	<div
-		transition:fade={{ duration: 200 }}
-		id="bg"
-		on:click={() => {
-			bg = false
-		}}
-		on:keypress={() => {
-			bg = false
-		}}
-	>
+	<div transition:fade={{ duration: 200 }} id="bg" on:click={close} on:keypress={close}>
 		<h1>{currentItem.Name}</h1>
 		<img src="https://cdn.torbreckorchard.co.uk/galleryhq/{currentItem.Filename}.jpg" alt={currentItem.Name} />
 		<h2>{currentItem.Description}</h2>
@@ -51,7 +36,7 @@
 		left: 0
 		width: 100vw
 		height: 100vh
-		background: #000000ef
+		background: #000e
 		z-index: 999
 		h1, h2
 			text-align: center
@@ -72,7 +57,7 @@
 			transform: translate(-50%, -48%)
 
 	button
-		background-color: #0000
+		background: #0000
 		border: 0
 		padding: 0
 
@@ -90,14 +75,12 @@
 			transform: scale(1.2)
 
 	@media screen and (max-width: 800px)
-		#bg
-			h2
-				width: 60%
+		h2
+			width: 60%
 
 	@media screen and (max-width: 600px)
-		#bg
-			h1
-				margin-top: 3rem
-			h2
-				width: 85%
+		h1
+			margin-top: 3rem
+		h2
+			width: 85%
 </style>
