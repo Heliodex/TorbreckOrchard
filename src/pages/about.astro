@@ -5,16 +5,30 @@ import Layout from "../layouts/Layout.astro"
 <Layout title="About - Torbreck Orchard">
 	<h1>Our Story</h1>
 	<div>
-		<p>
-			We are an independent, family-run heritage fruit tree orchard.<br />
-			<br />
-			Kay and Des Kelly commenced fruit tree planting in 2009 with the intention of creating an orchard which would preserve some of Scotland's rarest heirloom apple varieties. Today, Torbreck Orchard hosts a collection of over 200 different heritage varieties of apples, pears and plums...<br />
-			<br />
-			...all grown without the use of pesticides, insecticides, herbicides or fungicides.<br />
-			<br />
-			Instead, we draw on a wealth of knowledge, combined with all of our dedication and hard work.
-		</p>
-		<img src="https://cdn.torbreckorchard.co.uk/about.webp" alt="Apples on a tree" />
+		<span>
+			<p>
+				We are an independent, family-run heritage fruit tree orchard.
+			</p>
+			<p>
+				Kay and Des Kelly commenced fruit tree planting in 2009 with the
+				intention of creating an orchard which would preserve some of
+				Scotland's rarest heirloom apple varieties. Today, Torbreck
+				Orchard hosts a collection of over 200 different heritage
+				varieties of apples, pears and plums...
+			</p>
+			<p>
+				...all grown without the use of pesticides, insecticides,
+				herbicides or fungicides.
+			</p>
+			<p>
+				Instead, we draw on a wealth of knowledge, combined with all of
+				our dedication and hard work.
+			</p>
+		</span>
+		<img
+			src="https://cdn.torbreckorchard.co.uk/about.webp"
+			alt="Apples on a tree"
+		/>
 	</div>
 </Layout>
 
@@ -24,8 +38,10 @@ import Layout from "../layouts/Layout.astro"
 		@media screen and (min-width: 500px)
 			grid-template-columns 2fr 1fr
 
+	span
+		margin-right: 1rem
+
 	img
 		width 100%
 		border-radius 1rem
-
 </style>

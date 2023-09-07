@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from "astro:transitions"
+
 const { frontmatter, title } = Astro.props
 ---
 
@@ -8,8 +10,13 @@ const { frontmatter, title } = Astro.props
 		<meta name="viewport" content="width=device-width" />
 		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="An orchard of heritage fruit trees in Inverness-shire, situated close to Loch Ness in the Scottish Highlands." />
+		<meta
+			name="description"
+			content="An orchard of heritage fruit trees in Inverness-shire, situated close to Loch Ness in the Scottish Highlands."
+		/>
 		<title>{frontmatter?.title ?? title}</title>
+
+		<ViewTransitions />
 	</head>
 	<body>
 		<header>
@@ -37,7 +44,7 @@ const { frontmatter, title } = Astro.props
 				position sticky
 				top 0
 				width 100%
-				background-color #1b4500
+				background-color hsl(96, 100, 14)
 				z-index 899
 
 			nav
@@ -82,7 +89,7 @@ const { frontmatter, title } = Astro.props
 				font-display swap
 
 			:root
-				overflow overlay
+				overflow hidden
 
 			html
 				background-size 100vw 100vh
@@ -93,13 +100,16 @@ const { frontmatter, title } = Astro.props
 				color white
 				margin auto
 				font-size 1.2rem
+				font-weight 300
+				overflow-y scroll
+				height 100vh
 
 			main
 				max-width 52rem
 				padding 2% 3% 3% 3%
 				margin auto
 				margin-bottom 10vh
-				background-color #1b4500cc
+				background-color hsla(96, 100, 14, 0.8)
 				border-radius 0 0 1rem 1rem
 
 				a
@@ -116,21 +126,30 @@ const { frontmatter, title } = Astro.props
 				margin 0
 			h2
 				font-size 2rem
+				font-weight 500
 
 			p
 			ul
 				font-size 1.2rem
 
 			::-webkit-scrollbar
-				width 15px
+				width 1rem
+				height 1rem
 				cursor pointer
 				&-track
-					background none
+				&-corner
+					background hsl(96, 100, 12)
+
 				&-thumb
-					border-radius 9rem
-					background #222
+					background hsl(96, 100, 16)
+					border 0.2rem solid hsl(96, 100, 12)
+					border-radius 1rem
+					width 0.5rem
+					
 					&:hover
-						background #444
+						background hsl(96, 100, 20)
+					&:active
+						background hsl(96, 100, 8)
 		</style>
 	</body>
 </html>
