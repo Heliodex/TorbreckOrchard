@@ -38,8 +38,10 @@
 
 {#if bg}
 	<div
-		transition:fade={{ duration: 200 }}
 		id="bg"
+		role="button"
+		tabindex={0}
+		transition:fade={{ duration: 200 }}
 		on:click={close}
 		on:keypress={close}>
 		<h2>{currentItem.Name}</h2>
