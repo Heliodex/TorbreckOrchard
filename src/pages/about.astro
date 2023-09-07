@@ -18,15 +18,14 @@ import Layout from "../layouts/Layout.astro"
 	</div>
 </Layout>
 
-<style lang="sass">
+<style lang="stylus">
 	div
-		display: grid
+		display grid
+		@media screen and (min-width: 500px)
+			grid-template-columns 2fr 1fr
 
 	img
-		width: 100%
-		border-radius: 1rem
+		width 100%
+		border-radius 1rem
 
-	@media screen and (min-width: 500px)
-		div
-			grid-template-columns: 2fr 1fr
 </style>

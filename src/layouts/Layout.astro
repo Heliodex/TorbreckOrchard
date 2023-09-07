@@ -26,110 +26,111 @@ const { frontmatter, title } = Astro.props
 			<slot />
 		</main>
 
-		<style lang="sass">
+		<style lang="stylus">
 			body
-				background-image: url("https://cdn.torbreckorchard.co.uk/orchtard.webp")
-				background-filter: blur(5px)
-				background-attachment: fixed
-				background-size: cover
+				background-image url("https://cdn.torbreckorchard.co.uk/orchtard.webp")
+				background-filter blur(5px)
+				background-attachment fixed
+				background-size cover
 
 			header
-				position: sticky
-				top: 0
-				width: 100%
-				background-color: #1b4500
-				z-index: 899
+				position sticky
+				top 0
+				width 100%
+				background-color #1b4500
+				z-index 899
 
 			nav
-				display: grid
-				grid-template-columns: repeat(6, 1fr)
-				row-gap: 0.2rem
-				column-gap: 0.2rem
+				display grid
+				grid-template-columns repeat(6, 1fr)
+				row-gap 0.2rem
+				column-gap 0.2rem
 
-				max-width: 52rem
-				margin: auto
-				padding: 3vh 3vw
+				max-width 52rem
+				margin auto
+				padding 3vh 3vw
 
-				@media screen and (max-width: 700px)
-					grid-template-columns: repeat(3, 1fr)
+				@media screen and (max-width 700px)
+					grid-template-columns repeat(3, 1fr)
 
-				@media screen and (max-width: 400px)
-					grid-template-columns: repeat(2, 1fr)
+				@media screen and (max-width 400px)
+					grid-template-columns repeat(2, 1fr)
 
 				a
-					color: black
-					background-color: #fff
-					padding: 0.4rem 0
-					border-radius: 0.7rem
-					overflow: hidden
-					white-space: nowrap
-					text-decoration: none
-					text-overflow: string
-					text-align: center
-					width: 100%
-					font-weight: bold
-					font-size: 1.1rem
-					transition: 0.2s
+					color black
+					background-color #fff
+					padding 0.4rem 0
+					border-radius 0.7rem
+					overflow hidden
+					white-space nowrap
+					text-decoration none
+					text-overflow string
+					text-align center
+					width 100%
+					font-weight bold
+					font-size 1.1rem
+					transition 0.2s
 					&:hover
-						transition: 0.2s
-						background-color: #abf590
+						transition 0.2s
+						background-color #abf590
 		</style>
 
-		<style lang="sass" is:global>
+		<style lang="stylus" is:global>
 			@font-face
-				font-family: "Lexend"
-				src: url("/assets/lexend.woff2") format("woff2")
-				font-display: swap
+				font-family "Lexend"
+				src url("/assets/Lexend.woff2") format("woff2")
+				font-display swap
 
 			:root
-				overflow: overlay
+				overflow overlay
 
 			html
-				background-size: 100vw 100vh
-				background-attachment: fixed
+				background-size 100vw 100vh
+				background-attachment fixed
 
 			body
-				font-family: Lexend, sans-serif
-				color: white
-				margin: auto
-				font-size: 1.2rem
+				font-family Lexend, sans-serif
+				color white
+				margin auto
+				font-size 1.2rem
 
 			main
-				max-width: 52rem
-				padding: 2% 3% 3% 3%
-				margin: auto
-				margin-bottom: 10vh
-				background-color: #1b4500cc
-				border-radius: 0 0 1rem 1rem
+				max-width 52rem
+				padding 2% 3% 3% 3%
+				margin auto
+				margin-bottom 10vh
+				background-color #1b4500cc
+				border-radius 0 0 1rem 1rem
 
 				a
-					color: cyan
+					color cyan
 					&:visited
-						color: palevioletred
+						color palevioletred
 					&:hover
-						color: red
+						color red
 					&:active
-						color: yellow
+						color yellow
 
 			h1
-				font-size: 2.5rem
-				margin: 0
+				font-size 2.5rem
+				margin 0
 			h2
-				font-size: 2rem
+				font-size 2rem
 
-			p, ul
-				font-size: 1.2rem
+			p
+			ul
+				font-size 1.2rem
 
 			::-webkit-scrollbar
-				width: 15px
-				cursor: pointer
+				width 15px
+				cursor pointer
 				&-track
-					background: none
+					background none
 				&-thumb
-					border-radius: 9rem
-					background: #222
+					border-radius 9rem
+					background #222
 					&:hover
-						background: #444
+						background #444
 		</style>
 	</body>
 </html>

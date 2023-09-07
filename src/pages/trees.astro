@@ -187,13 +187,11 @@ import Layout from "../layouts/Layout.astro"
 	</ul>
 </Layout>
 
-<style lang="sass">
+<style lang="stylus">
 	ul
-		column-count: 3
-	@media screen and (max-width: 800px)
-		ul
-			column-count: 2
-	@media screen and (max-width: 500px)
-		ul
-			column-count: 1
+		column-count 3
+		@media screen and (max-width: 800px)
+			column-count 2
+		@media screen and (max-width: 500px)
+			column-count 1
 </style>
