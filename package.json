@@ -25,7 +25,7 @@
 		"stylus": "^0.60.0",
 		"svelte": "^4.2.0",
 		"typescript": "^5.2.2",
-		"vite": "^4.4.9"
+		"vite": "^4.4.12"
 	},
 	"dependencies": {
 		"svelte-preprocess": "^5.0.4"
