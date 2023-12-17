@@ -12,23 +12,18 @@
 		currentItem: Item
 
 	const open = (item: Item) => () => {
-			currentItem = item
-			bg = true
-		},
-		close = () => {
-			bg = false
-		}
+		currentItem = item
+		bg = true
+	}
+	const close = () => (bg = false)
 </script>
 
-<svelte:window on:keydown={close} />
+<svelte:window on:keypress={close} />
 
 <br />
 <div id="all">
 	{#each json as item}
-		<button
-			class="galleryimg"
-			on:click={open(item)}
-			on:keypress={open(item)}>
+		<button class="galleryimg" on:click={open(item)} on:keypress={open(item)}>
 			<img
 				src="https://cdn.torbreckorchard.co.uk/gallery/{item.Filename}.webp"
 				alt={item.Name} />
