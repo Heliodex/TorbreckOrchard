@@ -16,7 +16,7 @@ importers:
         version: 3.0.3
       '@astrojs/svelte':
         specifier: ^5.0.1
-        version: 5.0.1(astro@4.0.6(stylus@0.62.0)(typescript@5.3.3))(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.13(stylus@0.62.0))
+        version: 5.0.1(astro@4.0.6(stylus@0.62.0)(typescript@5.3.3))(svelte@4.2.19)(typescript@5.3.3)(vite@5.0.13(stylus@0.62.0))
       '@types/leaflet':
         specifier: ^1.9.8
         version: 1.9.8
@@ -34,16 +34,16 @@ importers:
         version: 0.12.2
       prettier-plugin-svelte:
         specifier: ^3.1.2
-        version: 3.1.2(prettier@3.1.1)(svelte@4.2.8)
+        version: 3.1.2(prettier@3.1.1)(svelte@4.2.19)
       stylus:
         specifier: ^0.62.0
         version: 0.62.0
       svelte:
-        specifier: 4.2.8
-        version: 4.2.8
+        specifier: 4.2.19
+        version: 4.2.19
       svelte-preprocess:
         specifier: ^5.1.2
-        version: 5.1.2(@babel/core@7.23.6)(postcss@8.4.32)(stylus@0.62.0)(svelte@4.2.8)(typescript@5.3.3)
+        version: 5.1.2(@babel/core@7.23.6)(postcss@8.4.32)(stylus@0.62.0)(svelte@4.2.19)(typescript@5.3.3)
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
@@ -568,8 +568,9 @@ packages:
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
 
-  axobject-query@3.2.1:
-    resolution: {integrity: sha512-jsyHu61e6N4Vbz/v18DHwWYKK0bSWLqn47eeDSKPB7m8tqMHF9YJ+mhIk2lVteyZrY8tnSj/jHOv4YiTCuCJgg==}
+  axobject-query@4.1.0:
+    resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
+    engines: {node: '>= 0.4'}
 
   b4a@1.6.4:
     resolution: {integrity: sha512-fpWrvyVHEKyeEvbKZTVOeZF3VSKKWtJxFIxX/jaVPf+cLbGUSitjb49pHLqPV2BUNNZ0LcoeEGfE/YCpyDYHIw==}
@@ -1921,8 +1922,8 @@ packages:
       svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
       typescript: ^4.9.4 || ^5.0.0
 
-  svelte@4.2.8:
-    resolution: {integrity: sha512-hU6dh1MPl8gh6klQZwK/n73GiAHiR95IkFsesLPbMeEZi36ydaXL/ZAb4g9sayT0MXzpxyZjR28yderJHxcmYA==}
+  svelte@4.2.19:
+    resolution: {integrity: sha512-IY1rnGr6izd10B0A8LqsBfmlT5OILVuZ7XsI0vdGPEvuonFV7NYEUK4dAkm9Zg2q0Um92kYjTpS1CAP3Nh/KWw==}
     engines: {node: '>=16'}
 
   tar-fs@2.1.1:
@@ -2204,12 +2205,12 @@ snapshots:
       sitemap: 7.1.1
       zod: 3.22.4
 
-  '@astrojs/svelte@5.0.1(astro@4.0.6(stylus@0.62.0)(typescript@5.3.3))(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.13(stylus@0.62.0))':
+  '@astrojs/svelte@5.0.1(astro@4.0.6(stylus@0.62.0)(typescript@5.3.3))(svelte@4.2.19)(typescript@5.3.3)(vite@5.0.13(stylus@0.62.0))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 3.0.1(svelte@4.2.8)(vite@5.0.13(stylus@0.62.0))
+      '@sveltejs/vite-plugin-svelte': 3.0.1(svelte@4.2.19)(vite@5.0.13(stylus@0.62.0))
       astro: 4.0.6(stylus@0.62.0)(typescript@5.3.3)
-      svelte: 4.2.8
-      svelte2tsx: 0.6.27(svelte@4.2.8)(typescript@5.3.3)
+      svelte: 4.2.19
+      svelte2tsx: 0.6.27(svelte@4.2.19)(typescript@5.3.3)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -2534,24 +2535,24 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.9.1':
     optional: true
 
-  '@sveltejs/vite-plugin-svelte-inspector@2.0.0(@sveltejs/vite-plugin-svelte@3.0.1(svelte@4.2.8)(vite@5.0.13(stylus@0.62.0)))(svelte@4.2.8)(vite@5.0.13(stylus@0.62.0))':
+  '@sveltejs/vite-plugin-svelte-inspector@2.0.0(@sveltejs/vite-plugin-svelte@3.0.1(svelte@4.2.19)(vite@5.0.13(stylus@0.62.0)))(svelte@4.2.19)(vite@5.0.13(stylus@0.62.0))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 3.0.1(svelte@4.2.8)(vite@5.0.13(stylus@0.62.0))
+      '@sveltejs/vite-plugin-svelte': 3.0.1(svelte@4.2.19)(vite@5.0.13(stylus@0.62.0))
       debug: 4.3.4
-      svelte: 4.2.8
+      svelte: 4.2.19
       vite: 5.0.13(stylus@0.62.0)
     transitivePeerDependencies:
       - supports-color
 
-  '@sveltejs/vite-plugin-svelte@3.0.1(svelte@4.2.8)(vite@5.0.13(stylus@0.62.0))':
+  '@sveltejs/vite-plugin-svelte@3.0.1(svelte@4.2.19)(vite@5.0.13(stylus@0.62.0))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte-inspector': 2.0.0(@sveltejs/vite-plugin-svelte@3.0.1(svelte@4.2.8)(vite@5.0.13(stylus@0.62.0)))(svelte@4.2.8)(vite@5.0.13(stylus@0.62.0))
+      '@sveltejs/vite-plugin-svelte-inspector': 2.0.0(@sveltejs/vite-plugin-svelte@3.0.1(svelte@4.2.19)(vite@5.0.13(stylus@0.62.0)))(svelte@4.2.19)(vite@5.0.13(stylus@0.62.0))
       debug: 4.3.4
       deepmerge: 4.3.1
       kleur: 4.1.5
       magic-string: 0.30.5
-      svelte: 4.2.8
-      svelte-hmr: 0.15.3(svelte@4.2.8)
+      svelte: 4.2.19
+      svelte-hmr: 0.15.3(svelte@4.2.19)
       vite: 5.0.13(stylus@0.62.0)
       vitefu: 0.2.5(vite@5.0.13(stylus@0.62.0))
     transitivePeerDependencies:
@@ -2745,9 +2746,7 @@ snapshots:
       - terser
       - typescript
 
-  axobject-query@3.2.1:
-    dependencies:
-      dequal: 2.0.3
+  axobject-query@4.1.0: {}
 
   b4a@1.6.4:
     optional: true
@@ -4100,10 +4099,10 @@ snapshots:
       prettier: 3.1.1
       sass-formatter: 0.7.8
 
-  prettier-plugin-svelte@3.1.2(prettier@3.1.1)(svelte@4.2.8):
+  prettier-plugin-svelte@3.1.2(prettier@3.1.1)(svelte@4.2.19):
     dependencies:
       prettier: 3.1.1
-      svelte: 4.2.8
+      svelte: 4.2.19
 
   prettier@3.1.1: {}
 
@@ -4485,39 +4484,40 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-hmr@0.15.3(svelte@4.2.8):
+  svelte-hmr@0.15.3(svelte@4.2.19):
     dependencies:
-      svelte: 4.2.8
+      svelte: 4.2.19
 
-  svelte-preprocess@5.1.2(@babel/core@7.23.6)(postcss@8.4.32)(stylus@0.62.0)(svelte@4.2.8)(typescript@5.3.3):
+  svelte-preprocess@5.1.2(@babel/core@7.23.6)(postcss@8.4.32)(stylus@0.62.0)(svelte@4.2.19)(typescript@5.3.3):
     dependencies:
       '@types/pug': 2.0.10
       detect-indent: 6.1.0
       magic-string: 0.27.0
       sorcery: 0.11.0
       strip-indent: 3.0.0
-      svelte: 4.2.8
+      svelte: 4.2.19
     optionalDependencies:
       '@babel/core': 7.23.6
       postcss: 8.4.32
       stylus: 0.62.0
       typescript: 5.3.3
 
-  svelte2tsx@0.6.27(svelte@4.2.8)(typescript@5.3.3):
+  svelte2tsx@0.6.27(svelte@4.2.19)(typescript@5.3.3):
     dependencies:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
-      svelte: 4.2.8
+      svelte: 4.2.19
       typescript: 5.3.3
 
-  svelte@4.2.8:
+  svelte@4.2.19:
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@jridgewell/sourcemap-codec': 1.4.15
       '@jridgewell/trace-mapping': 0.3.20
+      '@types/estree': 1.0.5
       acorn: 8.11.2
       aria-query: 5.3.0
-      axobject-query: 3.2.1
+      axobject-query: 4.1.0
       code-red: 1.0.4
       css-tree: 2.3.1
       estree-walker: 3.0.3
