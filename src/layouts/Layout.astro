@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions"
+import { ClientRouter } from "astro:transitions"
 
 const { frontmatter, title } = Astro.props
 ---
@@ -16,7 +16,7 @@ const { frontmatter, title } = Astro.props
 		/>
 		<title>{frontmatter?.title ?? title}</title>
 
-		<ViewTransitions />
+		<ClientRouter />
 	</head>
 	<body>
 		<header>
