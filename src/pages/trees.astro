@@ -194,13 +194,24 @@ import Layout from "../layouts/Layout.astro"
 		<li>Williams Bon Chretian</li>
 		<li>Windsor</li>
 	</ul>
+
+	<h2>Cherries</h2>
+	<ul>
+		<li>Sunburst</li>
+		<li>Stella</li>
+		<li>Lapins Cherokee</li>
+		<li>Kordia</li>
+	</ul>
 </Layout>
 
-<style lang="stylus">
-	ul
-		column-count 3
-		@media screen and (max-width: 800px)
-			column-count 2
-		@media screen and (max-width: 500px)
-			column-count 1
+<style>
+	ul {
+		column-count: 3;
+		@media screen and (max-width: 800px) {
+			column-count: 2;
+		}
+		@media screen and (max-width: 500px) {
+			column-count: 1;
+		}
+	}
 </style>

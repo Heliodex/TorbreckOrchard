@@ -22,7 +22,6 @@
 		"prettier": "^3.7.4",
 		"prettier-plugin-astro": "^0.14.1",
 		"prettier-plugin-svelte": "^3.4.0",
-		"stylus": "^0.64.0",
 		"svelte": "^5.45.6",
 		"svelte-preprocess": "^6.0.3",
 		"typescript": "^5.9.3",

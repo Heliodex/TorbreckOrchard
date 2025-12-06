@@ -32,16 +32,18 @@ import Layout from "../layouts/Layout.astro"
 	</div>
 </Layout>
 
-<style lang="stylus">
-	div
-		display grid
-		@media screen and (min-width: 500px)
-			grid-template-columns 2fr 1fr
-
-	span
-		margin-right: 1rem
-
-	img
-		width 100%
-		border-radius 1rem
+<style>
+	div {
+		display: grid;
+		@media screen and (min-width: 500px) {
+			grid-template-columns: 2fr 1fr;
+		}
+	}
+	span {
+		margin-right: 1rem;
+	}
+	img {
+		width: 100%;
+		border-radius: 1rem;
+	}
 </style>
