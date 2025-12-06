@@ -15,6 +15,11 @@
 		"Description": "A campfire at Torbreck Orchard being used to melt beeswax."
 	},
 	{
+		"Name": "Orchard landscape",
+		"Filename": "Orchard Landscape",
+		"Description": ""
+	},
+	{
 		"Name": "Apple blossom",
 		"Filename": "Apple blossom",
 		"Description": ""
@@ -87,6 +92,11 @@
 	{
 		"Name": "Herefordshire Russet",
 		"Filename": "Herefordshire Russet",
+		"Description": ""
+	},
+	{
+		"Name": "Hessle Pear",
+		"Filename": "Hessle Pear",
 		"Description": ""
 	},
 	{

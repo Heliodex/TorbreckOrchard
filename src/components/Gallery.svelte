@@ -16,6 +16,17 @@
 		bg = true
 	}
 	const close = () => (bg = false)
+
+	const dev = import.meta.env.MODE === "development"
+
+	const filename = (name: String) =>
+		dev
+			? `/gallery/${name}.avif`
+			: `https://cdn.torbreckorchard.co.uk/gallery/${name}.avif`
+	const filenamehq = (name: String) =>
+		dev
+			? `/galleryhq/${name}.jpg`
+			: `https://cdn.torbreckorchard.co.uk/galleryhq/${name}.jpg`
 </script>
 
 <svelte:window on:keypress={close} />
@@ -27,9 +38,7 @@
 			class="galleryimg"
 			on:click={open(item)}
 			on:keypress={open(item)}>
-			<img
-				src="https://cdn.torbreckorchard.co.uk/gallery/{item.Filename}.webp"
-				alt={item.Name} />
+			<img src={filename(item.Filename)} alt={item.Name} />
 		</button>
 	{/each}
 </div>
@@ -43,9 +52,7 @@
 		on:click={close}
 		on:keypress={close}>
 		<h2>{currentItem.Name}</h2>
-		<img
-			src="https://cdn.torbreckorchard.co.uk/galleryhq/{currentItem.Filename}.jpg"
-			alt={currentItem.Name} />
+		<img src={filenamehq(currentItem.Filename)} alt={currentItem.Name} />
 		<h3>{currentItem.Description}</h3>
 	</div>
 {/if}
